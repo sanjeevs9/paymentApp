@@ -1,20 +1,18 @@
 {
-  "name": "@repo/prisma",
+  "name": "@repo/store",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "exports":{
-    "./client":"./src/index.ts"
+    "./useBalance":"./src/hooks/useBalance.ts"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
-  "devDependencies": {
-    "prisma": "^5.20.0"
-  },
   "dependencies": {
-    "@prisma/client": "^5.20.0"
+    "recoil": "^0.7.7"
   }
 }
