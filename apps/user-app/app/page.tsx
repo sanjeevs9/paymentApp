@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "@repo/ui/button";
 import styles from "./page.module.css";
+import "../../../packages/ui/styles.css"
 
 export default function Home() {
   return (
@@ -35,8 +36,14 @@ export default function Home() {
               width={20}
               height={20}
             />
-            Deploy now
+            <div className="bg-red-300 text-blue-400">
+        sanjev sffsss
+            </div>
+
           </a>
+          <div className="bg-red-200">
+            asdfasdfs
+          </div>
           <a
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
             target="_blank"
