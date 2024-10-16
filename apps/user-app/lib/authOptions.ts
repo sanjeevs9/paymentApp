@@ -54,8 +54,6 @@ export const authOptions={
                 return null
 
             }
-
-
         })],
         secret:"fasdf",
         callbacks:{
