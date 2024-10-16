@@ -1,6 +1,5 @@
 import "./globals.css";
 import "../../../packages/ui/styles.css"
-import { RecoilRoot } from "recoil";
 import { Providers } from "../provider";
 
 

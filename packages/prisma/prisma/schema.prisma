@@ -14,9 +14,21 @@ datasource db {
 }
 
 model User{
-  id Int @unique
-  email String @unique
+  id Int @unique @default(autoincrement())
   name String
+  number Int @unique
   password String
+}
+
+model Merchant{
+  id Int @unique @default(autoincrement())
+  email String @unique
+  name String?
+  auth_type AuthType
+}
+
+enum AuthType {
+  Google
+  Github
 }
 
