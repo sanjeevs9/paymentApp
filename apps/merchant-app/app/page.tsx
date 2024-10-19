@@ -1,11 +1,19 @@
-import Image from "next/image";
-import { Button } from "@repo/ui/button";
-import styles from "./page.module.css";
+"use client"
+import { useSession } from "next-auth/react";
+
 
 export default function Home() {
+const session=useSession();
+if(session){
+  console.log("hello from session")
+}else{
+  console.log("not session");
+  
+}
   return (
-    <div className={styles.page}>
+    <div >
       hello from merchant app
+      {JSON.stringify(session.data)}
     </div>
   );
 }

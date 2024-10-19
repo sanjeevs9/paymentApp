@@ -1,4 +1,3 @@
-import "./globals.css";
 import "../../../packages/ui/styles.css"
 import { Providers } from "../provider";
 
@@ -11,11 +10,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Providers>
         <body>
+      <Providers>
           {children}
-        </body>
       </Providers>
+        </body>
     </html>
   );
 }

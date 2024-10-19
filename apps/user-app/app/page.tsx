@@ -1,11 +1,19 @@
 "use client";
 
-import {useBalance} from "@repo/store/balance";
+import {useSession} from "next-auth/react";
 
 export default function() {
-  const num=useBalance();
+
+  const session=useSession();
+  // if(session){
+  //   console.log("hello from session")
+  // }else{
+  //   console.log("not session");
+    
+  // }
   return <div>
-    hi there user-app{num}
+    hi there user-app 
+    {JSON.stringify(session.data)}
     <div>
     user-app
     </div>
